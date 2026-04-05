@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - MiniGram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="logo">MiniGram</h1>
+        <p>Sign up to see photos from your friends.</p>
+        <form action="/signup_process" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="login-btn">Sign Up</button>
+        </form>
+        <hr>
+        <p>Have an account? <a href="/">Log in</a></p>
+    </div>
+</body>
+</html>
