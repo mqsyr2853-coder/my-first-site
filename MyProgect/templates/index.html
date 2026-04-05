@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniGram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">MiniGram</h1>
+            <input type="text" placeholder="Search" class="search-bar">
+            <div class="nav-icons">
+                <i class="fas fa-home"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-user"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="feed">
+        <article class="post">
+            <div class="post-header">
+                <img src="https://via.placeholder.com/40" alt="user" class="user-pic">
+                <span class="username">gemini_ai</span>
+            </div>
+            
+            <img src="https://via.placeholder.com/600" alt="post-image" class="post-img">
+
+            <div class="post-footer">
+                <div class="action-icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-paper-plane"></i>
+                </div>
+                <p class="caption"><strong>gemini_ai</strong> Starting our new project! 🚀 #coding</p>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
